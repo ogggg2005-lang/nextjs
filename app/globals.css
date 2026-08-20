@@ -25,7 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar,.page {
+.navbar {
   width: min(100% - 2rem, 70rem);
   margin-inline: auto
 }
