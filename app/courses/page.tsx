@@ -28,6 +28,13 @@ const courses: Course[] = [
     credits: 4,
     isOpen: true,
   },
+  {
+    id: 4,
+    code: "10301234",
+    title: "Software Engineering",
+    credits: 3,
+    isOpen: true,
+  },
 ];
 
 export default function CoursesPage() {
