@@ -42,6 +42,13 @@ export default function Home() {
       credits: 4,
       isOpen: true,
     },
+    {
+    id: 4,
+    code: "10301234",
+    title: "Software Engineering",
+    credits: 3,
+    isOpen: true,
+  },
   ];
 
   const courseCount: number = courses.length;
