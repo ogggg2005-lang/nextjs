@@ -1,4 +1,4 @@
-import type { Band } from "@/types/band";
+import type { Band } from "../types/band";
 
 export const favoriteBands: Band[] = [
   {

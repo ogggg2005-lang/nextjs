@@ -1,5 +1,5 @@
-import CourseCard from "@/components/CourseCard";
-import type { Course } from "@/types/course";
+import CourseCard from "./CourseCard";
+import type { Course } from "../types/course";
 
 type CourseListProps = {
   courses: Course[];

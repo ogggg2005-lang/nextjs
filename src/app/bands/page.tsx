@@ -1,7 +1,7 @@
-import BandCard from "@/components/BandCard";
-import { favoriteBands } from "@/data/bands";
+import BandCard from "../../components/BandCard";
+import { favoriteBands } from "../../data/bands";
 
-export default function FavoriteBandsPage() {
+export default function BandsPage() {
   return (
     <main className="min-h-screen p-8 max-w-6xl mx-auto">
       <header className="mb-8">

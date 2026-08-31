@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/SectionTitle";
-import CourseCard from "@/components/CourseCard";
-import type { Course } from "@/types/course";
+import SectionTitle from "../../components/SectionTitle";
+import CourseCard from "../../components/CourseCard";
+import type { Course } from "../../types/course";
 
 const courses: Course[] = [
   {
