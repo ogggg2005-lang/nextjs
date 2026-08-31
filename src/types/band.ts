@@ -5,4 +5,5 @@ export type Band = {
   members: string[];
   image: string;
   description?: string;
+  imagePosition?: string;
 };

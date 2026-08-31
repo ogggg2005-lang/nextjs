@@ -15,6 +15,7 @@ export default function BandCard({ band }: BandCardProps) {
             alt={band.name}
             fill
             className="object-cover"
+            style={{ objectPosition: band.imagePosition ?? "center" }}
             sizes="(max-width: 768px) 100vw, 33vw"
             priority
           />
