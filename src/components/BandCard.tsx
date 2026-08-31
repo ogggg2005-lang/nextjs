@@ -9,7 +9,7 @@ export default function BandCard({ band }: BandCardProps) {
   return (
     <article className="border rounded-xl p-4 shadow-sm bg-white dark:bg-zinc-900 flex flex-col justify-between">
       <div>
-        <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
+        <div className="relative w-full h-48 mb-8 overflow-hidden rounded-lg">
           <Image
             src={band.image}
             alt={band.name}
