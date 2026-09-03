@@ -1,5 +1,4 @@
 import type { Band } from "../types/band";
-
 export const favoriteBands: Band[] = [
   {
     id: 1,
@@ -20,7 +19,7 @@ export const favoriteBands: Band[] = [
     genre: "Indie Pop / Alternative",
     members: [
       { name: "เบนซ์ (ร้องนำ/กีตาร์)", image: "/images/bands/Banz.jpg" },
-      { name: "ล่าคหว้า (คีย์บอร์ด/ซินธิไซเซอร์)", image: "/images/bands/Lukwa.jpg" },
+      { name: "ลุคหว้า (คีย์บอร์ด/ซินธิไซเซอร์)", image: "/images/bands/Lukwa.jpg" },
     ],
     image: "/images/bands/dept.jpg",
     imagePosition: "top",
