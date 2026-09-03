@@ -14,8 +14,7 @@ export default function BandCard({ band }: BandCardProps) {
             src={band.image}
             alt={band.name}
             fill
-            className="object-cover"
-            style={{ objectPosition: band.imagePosition ?? "center" }}
+            className="object-cover object-top"
             sizes="(max-width: 768px) 100vw, 33vw"
             priority
           />
@@ -37,9 +36,22 @@ export default function BandCard({ band }: BandCardProps) {
         <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">
           สมาชิก:
         </p>
-        <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {band.members.map((member: string, index: number) => (
-            <li key={index}>{member}</li>
+        <ul className="mt-2 space-y-2">
+          {band.members.map((member, index) => (
+            <li key={index} className="flex items-center gap-3">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover object-top"
+                  sizes="40px"
+                />
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400">
+                {member.name}
+              </span>
+            </li>
           ))}
         </ul>
       </div>
