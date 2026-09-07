@@ -3,6 +3,7 @@ export const favoriteBands: Band[] = [
   {
     id: 1,
     name: "Safeplanet",
+    foundedYear: 2012,
     genre: "Indie Pop / Dream Pop",
     members: [
       { name: "เอ (ร้องนำ/กีตาร์)", image: "/images/bands/A.jpg" },
@@ -16,6 +17,7 @@ export const favoriteBands: Band[] = [
   {
     id: 2,
     name: "Dept",
+    foundedYear: 2015,
     genre: "Indie Pop / Alternative",
     members: [
       { name: "เบนซ์ (ร้องนำ/กีตาร์)", image: "/images/bands/Banz.jpg" },
@@ -28,6 +30,7 @@ export const favoriteBands: Band[] = [
   {
     id: 3,
     name: "Anatomy Rabbit",
+    foundedYear: 2015,
     genre: "Dream Pop / Indie Rock",
     members: [
       { name: "โอ๊ค (ร้องนำ/กีตาร์)", image: "/images/bands/Oot.jpg" },

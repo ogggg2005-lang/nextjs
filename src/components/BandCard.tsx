@@ -35,6 +35,9 @@ export default function BandCard({
         <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
           แนวเพลง: {band.genre}
         </p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          ก่อตั้ง: {band.foundedYear}
+        </p>
         {band.description && (
           <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
             {band.description}
