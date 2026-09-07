@@ -1,5 +1,4 @@
 import type { Course } from "../types/course";
-import ButtonComponent from "./ButtonComponet";
 import CounterDemo from "./CounterDemo";
 
 type CourseCardProps = {
@@ -47,8 +46,7 @@ export default function CourseCard({
         </span>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-3">
-        <ButtonComponent />
+      <div className="mt-4 flex flex-wrap justify-end gap-3">
         <CounterDemo />
       </div>
     </article>

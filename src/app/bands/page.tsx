@@ -1,4 +1,4 @@
-import BandCard from "../../components/BandCard";
+import BandExplorer from "../../components/BandExplorer";
 import { favoriteBands } from "../../data/bands";
 
 export default function BandsPage() {
@@ -13,11 +13,7 @@ export default function BandsPage() {
         </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {favoriteBands.map((band) => (
-          <BandCard key={band.id} band={band} />
-        ))}
-      </section>
+      <BandExplorer bands={favoriteBands} />
     </main>
   );
 }

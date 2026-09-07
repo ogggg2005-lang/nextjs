@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Band } from "../types/band";
+import CounterDemo from "./CounterDemo";
 
 type BandCardProps = {
   band: Band;
@@ -54,6 +55,10 @@ export default function BandCard({ band }: BandCardProps) {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="mt-4 flex justify-end border-t border-gray-100 pt-3 dark:border-zinc-800">
+        <CounterDemo />
       </div>
     </article>
   );
