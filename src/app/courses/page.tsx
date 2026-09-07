@@ -1,5 +1,5 @@
 import SectionTitle from "../../components/SectionTitle";
-import CourseCard from "../../components/CourseCard";
+import CourseExplorer from "../../components/CourseExplorer";
 import type { Course } from "../../types/course";
 
 const courses: Course[] = [
@@ -37,11 +37,7 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen max-w-5xl mx-auto px-6 py-12">
       <SectionTitle />
-      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-        {courses.map((course) => (
-          <CourseCard key={course.id} course={course} />
-        ))}
-      </section>
+      <CourseExplorer courses={courses} />
     </main>
   );
 }
