@@ -1,4 +1,6 @@
 import type { Course } from "../types/course";
+import ButtonComponent from "./ButtonComponet";
+import CounterDemo from "./CounterDemo";
 
 type CourseCardProps = {
   course: Course;
@@ -43,6 +45,11 @@ export default function CourseCard({
         <span className="font-medium text-zinc-900 dark:text-zinc-100">
           {course.credits} หน่วยกิต
         </span>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-3">
+        <ButtonComponent />
+        <CounterDemo />
       </div>
     </article>
   );

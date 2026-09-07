@@ -1,3 +1,4 @@
+"use client"; 
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,6 +42,7 @@ export default function Home() {
               เกี่ยวกับเรา (About)
             </Link>
           </div>
+
         </div>
 
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row mt-8">
