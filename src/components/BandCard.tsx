@@ -1,12 +1,21 @@
 import Image from "next/image";
 import type { Band } from "../types/band";
-import CounterDemo from "./CounterDemo";
 
 type BandCardProps = {
   band: Band;
+  isFollowing: boolean;
+  likeCount: number;
+  onToggleFollow: (bandId: number) => void;
+  onLike: (bandId: number) => void;
 };
 
-export default function BandCard({ band }: BandCardProps) {
+export default function BandCard({
+  band,
+  isFollowing,
+  likeCount,
+  onToggleFollow,
+  onLike,
+}: BandCardProps) {
   return (
     <article className="border rounded-xl p-4 shadow-sm bg-white dark:bg-zinc-900 flex flex-col justify-between">
       <div>
@@ -57,8 +66,25 @@ export default function BandCard({ band }: BandCardProps) {
         </ul>
       </div>
 
-      <div className="mt-4 flex justify-end border-t border-gray-100 pt-3 dark:border-zinc-800">
-        <CounterDemo />
+      <div className="mt-4 flex flex-wrap justify-end gap-3 border-t border-gray-100 pt-3 dark:border-zinc-800">
+        <button
+          type="button"
+          onClick={() => onToggleFollow(band.id)}
+          className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+            isFollowing
+              ? "bg-zinc-200 text-zinc-800 hover:bg-zinc-300 dark:bg-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-600"
+              : "bg-blue-600 text-white hover:bg-blue-700"
+          }`}
+        >
+          {isFollowing ? "เลิกติดตาม" : "ติดตาม"}
+        </button>
+        <button
+          type="button"
+          onClick={() => onLike(band.id)}
+          className="rounded-lg bg-rose-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
+        >
+          Like {likeCount}
+        </button>
       </div>
     </article>
   );
